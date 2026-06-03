@@ -14,6 +14,18 @@ Use the kit to sell a small paid trial:
 4. Deliver one native-style post draft plus title and cover copy options.
 5. Offer a three-post package or monthly basic package after the trial.
 
+## Public Landing Page
+
+This repo includes a static landing page under `docs/index.html` for a low-price local business content offer.
+
+Suggested first offer:
+
+- 29 RMB: one REDNote / Xiaohongshu post draft plus one cover concept.
+- 59 RMB: three drafts and three cover concepts.
+- 99 RMB: one-week content rhythm and five draft ideas.
+
+The page intentionally uses email and public portfolio links first. Add a business contact QR code only after you have a safe, public contact channel. Do not publish bank card details, private account secrets, or payment-only QR codes as a lead capture method.
+
 ## What This Is
 
 Many local businesses already have good products, but their social content still looks like hard advertising: product photos, price, address, and little user context.
@@ -79,6 +91,11 @@ For a customized version, replace this line with your contact method.
 ## Contact Placeholder
 
 If you use this as a public portfolio, replace this section with your preferred contact method, such as GitHub profile, email, Upwork profile, or business WeChat.
+
+Current demo contact:
+
+- Email: 1014551947@qq.com
+- GitHub: https://github.com/chenxiaojie555
 
 ## License
 
