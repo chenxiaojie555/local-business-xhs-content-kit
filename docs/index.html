@@ -313,15 +313,27 @@
         white-space: pre-line;
       }
 
-      .qr-placeholder {
-        min-height: 180px;
-        display: grid;
-        place-items: center;
-        border: 1px dashed rgba(255, 255, 255, 0.4);
+      .qr-card {
         border-radius: 8px;
-        color: rgba(255, 255, 255, 0.72);
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 18px 36px rgba(0, 0, 0, 0.24);
+      }
+
+      .qr-card img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+      }
+
+      .qr-card span {
+        display: block;
+        padding: 10px 4px 2px;
+        color: var(--ink);
+        font-size: 14px;
+        font-weight: 700;
         text-align: center;
-        padding: 18px;
       }
 
       footer {
@@ -494,7 +506,7 @@
             <div>
               <h2>先从一条 29 元试做开始</h2>
               <p>
-                发店铺信息和 3-5 张真实图片，我会先判断是否适合做。如果你有微信联系二维码或公众号客服入口，可以放在右侧位置替换。
+                扫右侧微信二维码加我，直接发店铺信息和 3-5 张真实图片。我会先判断是否适合做，再确认价格、交付内容和修改次数。
               </p>
               <div class="copy-box">咨询模板：
 店名：
@@ -508,9 +520,9 @@
                 <a class="button" href="https://github.com/chenxiaojie555">GitHub 主页</a>
               </div>
             </div>
-            <div class="qr-placeholder">
-              微信联系二维码位<br>
-              请勿放收款码
+            <div class="qr-card">
+              <img src="./assets/wechat-contact-qr.jpg" alt="微信联系二维码，扫码添加 magicat">
+              <span>扫码加微信：magicat</span>
             </div>
           </div>
         </section>
