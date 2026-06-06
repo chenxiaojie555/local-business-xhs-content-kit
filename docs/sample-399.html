@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>399 元首周内容包样板 - 本地商家内容包</title>
+    <meta name="description" content="399 元首周内容包样板交付，展示本地小店可收到的诊断、图文方向、朋友圈活动文案、7 天发布节奏和咨询回复话术。">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1f2a2e;
+        --muted: #607177;
+        --line: #d9e0df;
+        --paper: #fbfbf8;
+        --green: #17725f;
+        --coral: #d65f45;
+        --gold: #b48731;
+        --blue: #315c87;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.65;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .page {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .brand {
+        font-weight: 800;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 320px;
+        gap: 36px;
+        align-items: end;
+        padding: 58px 0 44px;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--green);
+        font-weight: 800;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(40px, 6vw, 72px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 720px;
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: 19px;
+      }
+
+      .price-box {
+        border-radius: 8px;
+        color: #fff;
+        background: var(--coral);
+        padding: 24px;
+        box-shadow: 0 18px 36px rgba(214, 95, 69, 0.22);
+      }
+
+      .price-box strong {
+        display: block;
+        font-size: 58px;
+        line-height: 1;
+      }
+
+      .price-box span {
+        display: block;
+        margin-top: 10px;
+        font-weight: 700;
+      }
+
+      .meta {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+        padding: 20px 0 44px;
+      }
+
+      .meta span {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        padding: 14px;
+        color: var(--muted);
+      }
+
+      section {
+        padding: 48px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      h2 {
+        margin: 0 0 18px;
+        font-size: 30px;
+        letter-spacing: 0;
+      }
+
+      h3 {
+        margin: 0 0 10px;
+        font-size: 21px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .card,
+      .note,
+      .script {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        padding: 22px;
+      }
+
+      .card p,
+      .note p,
+      .script p {
+        color: var(--muted);
+      }
+
+      .tag {
+        display: inline-flex;
+        margin-bottom: 14px;
+        border-radius: 6px;
+        padding: 5px 10px;
+        color: #fff;
+        background: var(--green);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .note {
+        display: grid;
+        gap: 14px;
+      }
+
+      .note-title {
+        padding-bottom: 12px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .note-title b {
+        display: block;
+        font-size: 24px;
+      }
+
+      .note ul,
+      .card ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .timeline {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .day {
+        min-height: 150px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        padding: 14px;
+      }
+
+      .day b {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--blue);
+      }
+
+      .script {
+        white-space: pre-line;
+      }
+
+      .cta {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 240px;
+        gap: 24px;
+        align-items: center;
+        border-radius: 8px;
+        background: var(--ink);
+        color: #fff;
+        padding: 28px;
+      }
+
+      .cta p {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        margin-top: 18px;
+        padding: 0 18px;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .qr {
+        border-radius: 8px;
+        background: #fff;
+        padding: 10px;
+      }
+
+      .qr img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+      }
+
+      .qr span {
+        display: block;
+        padding: 8px 4px 0;
+        color: var(--ink);
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      footer {
+        padding: 24px 0 36px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 860px) {
+        header,
+        .hero {
+          align-items: flex-start;
+          grid-template-columns: 1fr;
+          flex-direction: column;
+        }
+
+        .meta,
+        .grid,
+        .timeline,
+        .cta {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="brand">本地商家内容包</div>
+        <nav>
+          <a href="./index.html">首页</a>
+          <a href="#notes">样板图文</a>
+          <a href="#calendar">发布节奏</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="eyebrow">虚拟样板交付，不代表真实探店体验</p>
+            <h1>399 元首周内容包样板</h1>
+            <p class="lead">下面是一家虚拟奶茶店的样板交付。正式服务会基于客户提供的真实图片、产品、价格和活动信息重写。</p>
+          </div>
+          <div class="price-box">
+            <strong>399</strong>
+            <span>3 条图文 + 朋友圈活动文案 + 7 天节奏 + 回复话术</span>
+          </div>
+        </section>
+
+        <div class="meta">
+          <span>城市：扬州大学城</span>
+          <span>主推：低糖奶茶 / 手作芋泥</span>
+          <span>活动：晚间第二杯半价</span>
+          <span>目标：同城搜索和到店咨询</span>
+        </div>
+
+        <section>
+          <h2>先给老板的诊断</h2>
+          <div class="grid">
+            <article class="card">
+              <span class="tag">问题</span>
+              <h3>只发“新品上市”太像广告</h3>
+              <p>用户刷到时没有生活场景，也不知道为什么现在要来。</p>
+            </article>
+            <article class="card">
+              <span class="tag">方向</span>
+              <h3>改成学生和夜间场景</h3>
+              <p>把“第二杯半价”放进晚自习、下班、约会、等朋友这些真实场景。</p>
+            </article>
+            <article class="card">
+              <span class="tag">关键词</span>
+              <h3>标题前半句放商圈词</h3>
+              <p>优先用“扬州大学城”“晚自习后”“低糖奶茶”等更容易被同城用户理解的词。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="notes">
+          <h2>3 条可发布图文方向</h2>
+          <div class="grid">
+            <article class="note">
+              <div class="note-title">
+                <span class="tag">内容 1</span>
+                <b>扬州大学城这杯低糖奶茶，晚自习后刚刚好</b>
+              </div>
+              <p>适合发在工作日 20:00 后，抓“下课后想喝点不腻的”场景。</p>
+              <ul>
+                <li>封面字：晚自习后，想喝点不腻的</li>
+                <li>正文重点：低糖、奶味、坐一会儿</li>
+                <li>关键词：扬州大学城 / 低糖奶茶 / 晚自习</li>
+              </ul>
+            </article>
+            <article class="note">
+              <div class="note-title">
+                <span class="tag">内容 2</span>
+                <b>不想喝太甜的看这家，芋泥党会懂</b>
+              </div>
+              <p>适合主推手作芋泥，把“甜”和“腻”的顾虑提前化解。</p>
+              <ul>
+                <li>封面字：芋泥党在扬州找到一杯稳的</li>
+                <li>正文重点：口感厚、甜度可调、第一次点单建议</li>
+                <li>关键词：芋泥奶茶 / 扬州奶茶 / 低糖</li>
+              </ul>
+            </article>
+            <article class="note">
+              <div class="note-title">
+                <span class="tag">内容 3</span>
+                <b>约会别只逛商场，这家奶茶店适合慢慢坐</b>
+              </div>
+              <p>适合周末下午发，用“坐一会儿”的空间价值带动到店咨询。</p>
+              <ul>
+                <li>封面字：第二杯半价，但不是廉价感</li>
+                <li>正文重点：两个人来、等朋友、聊天不赶人</li>
+                <li>关键词：扬州约会 / 大学城奶茶 / 周末去哪</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>朋友圈活动文案</h2>
+          <div class="script">今晚 19:00 后，低糖奶茶第二杯半价。
+
+适合晚自习后、下班后、两个人来店里坐一会儿。
+
+第一次来可以直接问低糖推荐，芋泥党建议先试手作芋泥款。
+
+活动以门店当天为准，想看菜单可以私信我。</div>
+        </section>
+
+        <section id="calendar">
+          <h2>7 天发布节奏</h2>
+          <div class="timeline">
+            <div class="day"><b>第 1 天</b>发低糖场景笔记，主打晚自习后。</div>
+            <div class="day"><b>第 2 天</b>朋友圈发第二杯半价活动。</div>
+            <div class="day"><b>第 3 天</b>发芋泥口感方向，承接收藏。</div>
+            <div class="day"><b>第 4 天</b>评论区置顶点单建议。</div>
+            <div class="day"><b>第 5 天</b>发约会/坐一会儿方向。</div>
+            <div class="day"><b>第 6 天</b>朋友圈提醒周末活动。</div>
+            <div class="day"><b>第 7 天</b>复盘浏览、收藏、咨询，改标题和封面。</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>咨询回复话术</h2>
+          <div class="grid">
+            <div class="script">顾客问：甜不甜？
+
+可以回：这款可以做低糖，奶味还在，甜度不会特别冲。第一次来建议低糖起试。</div>
+            <div class="script">顾客问：晚上还有活动吗？
+
+可以回：今晚 19:00 后有第二杯活动，具体以门店当天为准。你几个人来？我帮你看适合点什么。</div>
+            <div class="script">顾客问：在哪里？
+
+可以回：我们在扬州大学城附近，适合下课后或等朋友时坐一会儿。我发你定位和菜单。</div>
+          </div>
+        </section>
+
+        <section id="contact">
+          <div class="cta">
+            <div>
+              <h2>你的店也可以按这个格式做</h2>
+              <p>发店名、商圈、主推产品、活动信息和 3-5 张真实图片，我先判断素材是否适合做。</p>
+              <a class="button" href="./index.html#contact">扫码咨询首周包</a>
+            </div>
+            <div class="qr">
+              <img src="./assets/wechat-contact-qr.jpg" alt="微信联系二维码，扫码添加 magicat">
+              <span>扫码加微信：magicat</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        本页面为虚拟样板，仅展示交付结构。正式内容必须基于客户提供的真实素材。
+      </footer>
+    </div>
+  </body>
+</html>
