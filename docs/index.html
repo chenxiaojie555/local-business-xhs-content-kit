@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>本地商家内容包 - 小红书/朋友圈图文服务</title>
-    <meta name="description" content="为本地小店提供小红书图文、朋友圈海报、菜单活动图、PPT美化和表格整理服务，29元起。">
+    <title>本地商家内容包 - 小红书/朋友圈获客内容服务</title>
+    <meta name="description" content="为本地小店提供小红书图文、朋友圈海报、菜单活动图和首周获客内容包，29元试做，399元首周包。">
     <style>
       :root {
         color-scheme: light;
@@ -114,6 +114,11 @@
         background: var(--ink);
       }
 
+      .button.ghost {
+        border-color: var(--line);
+        background: #fff;
+      }
+
       .proof {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -214,6 +219,52 @@
         display: block;
         font-size: 34px;
         line-height: 1;
+      }
+
+      .offer-strip {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 16px;
+        align-items: stretch;
+      }
+
+      .offer-main {
+        border: 1px solid var(--ink);
+        border-radius: 8px;
+        background: #fff;
+        padding: 24px;
+      }
+
+      .offer-main strong {
+        display: block;
+        font-size: 42px;
+        line-height: 1;
+      }
+
+      .offer-main p,
+      .offer-side p {
+        margin: 12px 0 0;
+        color: var(--muted);
+      }
+
+      .offer-side {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        padding: 24px;
+      }
+
+      .deliverables {
+        display: grid;
+        gap: 8px;
+        margin-top: 16px;
+      }
+
+      .deliverables span {
+        display: block;
+        border-top: 1px solid var(--line);
+        padding-top: 8px;
+        color: var(--muted);
       }
 
       section {
@@ -355,6 +406,7 @@
         }
 
         .grid,
+        .offer-strip,
         .process,
         .proof {
           grid-template-columns: 1fr;
@@ -381,23 +433,24 @@
       <main>
         <section class="hero">
           <div>
-            <p class="eyebrow">小红书 / 朋友圈 / 菜单活动图</p>
-            <h1>给小店做能直接发布的内容</h1>
+            <p class="eyebrow">小红书 / 朋友圈 / 到店转化内容</p>
+            <h1>给小店做一周能发的内容包</h1>
             <p class="lead">
-              适合奶茶店、咖啡店、餐饮店、美甲店、宠物店和本地工作室。你给店名、产品图和想表达的活动，我交付文案、封面图和发布建议。
+              适合奶茶店、咖啡店、餐饮店、美甲店、宠物店和本地工作室。你给店名、产品图和活动信息，我把它整理成能发出去、能问价、能引导到店的图文内容。
             </p>
             <div class="actions">
-              <a class="button primary" href="mailto:1014551947@qq.com?subject=本地商家内容包咨询">发邮件咨询</a>
+              <a class="button primary" href="#contact">扫码咨询首周包</a>
               <a class="button" href="https://github.com/chenxiaojie555/local-business-xhs-content-kit/blob/main/SERVICE_OFFER.md">查看服务说明</a>
+              <a class="button ghost" href="mailto:1014551947@qq.com?subject=本地商家内容包咨询">发邮件</a>
             </div>
             <div class="proof">
-              <span>29 元单条体验</span>
-              <span>99 元正式试用包</span>
+              <span>399 元首周内容包</span>
+              <span>48 小时内交首版</span>
               <span>不刷量不承诺爆款</span>
             </div>
             <div class="notice">
-              <strong>建议先从 29 元单条体验开始。</strong>
-              我会先判断素材能不能做；如果适合，再升级 99 元试用包或 199 元三篇包。
+              <strong>想先试水可以 29 元做一条。</strong>
+              想省时间直接选 399 元首周包：我会把本周活动拆成 3 条内容、1 张朋友圈成交图和一段咨询回复话术。
             </div>
           </div>
 
@@ -405,8 +458,8 @@
             <div class="phone">
               <div class="phone-top"></div>
               <div class="post-cover">
-                <h2>今天的小店<br>应该这样发</h2>
-                <p>从硬广告变成用户愿意看的探店式内容。</p>
+                <h2>本周小店<br>这样发更像样</h2>
+                <p>从硬广告变成顾客愿意看、老板能直接发的内容。</p>
                 <div class="mini-lines">
                   <i style="width: 88%"></i>
                   <i style="width: 72%"></i>
@@ -415,14 +468,36 @@
               </div>
             </div>
             <div class="price-tag">
-              <strong>29</strong>
-              元起试做一条
+              <strong>399</strong>
+              元首周内容包
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>主推成交包</h2>
+          <div class="offer-strip">
+            <div class="offer-main">
+              <span class="price">首单建议</span>
+              <strong>399 元</strong>
+              <p>首周获客内容包：适合这周就想发活动、发新品、发朋友圈成交图的小店。</p>
+              <div class="deliverables">
+                <span>3 条小红书/朋友圈可发布文案，含标题和封面字</span>
+                <span>1 张朋友圈活动成交图文案，方便直接配图发布</span>
+                <span>1 份 7 天发布节奏和私信回复话术</span>
+                <span>含 1 次统一修改，素材清楚时 48 小时内交首版</span>
+              </div>
+            </div>
+            <div class="offer-side">
+              <span class="price">低门槛入口</span>
+              <h3>29 元单条试做</h3>
+              <p>老板不确定风格时，先做 1 条标题、正文方向和封面字。满意再补差价升级首周包。</p>
             </div>
           </div>
         </section>
 
         <section id="services">
-          <h2>可以先做这三类</h2>
+          <h2>也可以拆开做</h2>
           <div class="grid">
             <article class="card">
               <span class="price">29 元起</span>
@@ -435,9 +510,9 @@
               <p>一条完整小红书笔记、三个标题方向、三个封面文案、关键词和发布建议。</p>
             </article>
             <article class="card">
-              <span class="price">199 元起</span>
-              <h3>三条内容排期</h3>
-              <p>把近期活动拆成 3 条内容，给你一周内可发布的节奏。</p>
+              <span class="price">399 元</span>
+              <h3>首周获客包</h3>
+              <p>把近期活动拆成 3 条内容、1 张朋友圈成交图和 1 段咨询回复话术。</p>
             </article>
           </div>
         </section>
@@ -504,9 +579,9 @@
         <section id="contact">
           <div class="contact">
             <div>
-              <h2>先从一条 29 元试做开始</h2>
+              <h2>扫码发素材，先判断能不能做</h2>
               <p>
-                扫右侧微信二维码加我，直接发店铺信息和 3-5 张真实图片。我会先判断是否适合做，再确认价格、交付内容和修改次数。
+                扫右侧微信二维码加我，直接发店铺信息和 3-5 张真实图片。我会先判断素材是否适合做，再确认 29 元试做、99 元试用包，或 399 元首周内容包。
               </p>
               <div class="copy-box">咨询模板：
 店名：
@@ -514,7 +589,7 @@
 主营产品：
 这次想推：
 图片素材：有 / 没有
-想做：29 元单条体验 / 99 元正式试用包 / 199 元三条排期</div>
+想做：29 元单条体验 / 99 元正式试用包 / 399 元首周内容包</div>
               <div class="actions">
                 <a class="button primary" href="mailto:1014551947@qq.com?subject=本地商家内容包咨询">发邮件咨询</a>
                 <a class="button" href="https://github.com/chenxiaojie555">GitHub 主页</a>

@@ -8,6 +8,8 @@ This is useful when a shop has products, photos, and a real location, but does n
 
 ## Trial Package
 
+Price anchor: 29 RMB for one lightweight trial draft, or 99 RMB for a fuller trial post.
+
 Deliverables:
 
 - Quick content audit
@@ -21,12 +23,16 @@ Typical turnaround: 24-48 hours after receiving shop information and images.
 
 ## Three-Post Package
 
+Price anchor: 399 RMB as the recommended first-week local acquisition package.
+
 Deliverables:
 
 - Three complete post drafts
 - Title and cover copy options for each post
 - Keywords / hashtags for each post
 - One-week publishing rhythm
+- One WeChat Moments activity copy block
+- One short reply script for customer inquiries
 - One light revision
 
 ## Monthly Basic Package
@@ -71,4 +77,3 @@ For the first test, I’ll deliver:
 
 No fake reviews, no spam, and no promise of guaranteed virality. The goal is to make the content more native, searchable, and useful for local customers.
 ```
-
