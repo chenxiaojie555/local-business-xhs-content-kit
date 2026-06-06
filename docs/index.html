@@ -254,6 +254,31 @@
         padding: 24px;
       }
 
+      .order-panel {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 14px;
+        margin-top: 18px;
+      }
+
+      .order-item {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        padding: 18px;
+      }
+
+      .order-item b {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--green);
+      }
+
+      .order-item p {
+        margin: 0;
+        color: var(--muted);
+      }
+
       .deliverables {
         display: grid;
         gap: 8px;
@@ -364,6 +389,27 @@
         white-space: pre-line;
       }
 
+      .copy-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        margin-top: 12px;
+        padding: 0 14px;
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: 6px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.12);
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .copy-button:hover,
+      .copy-button:focus-visible {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
       .qr-card {
         border-radius: 8px;
         background: #fff;
@@ -407,6 +453,7 @@
 
         .grid,
         .offer-strip,
+        .order-panel,
         .process,
         .proof {
           grid-template-columns: 1fr;
@@ -492,6 +539,20 @@
               <span class="price">低门槛入口</span>
               <h3>29 元单条试做</h3>
               <p>老板不确定风格时，先做 1 条标题、正文方向和封面字。满意再补差价升级首周包。</p>
+            </div>
+          </div>
+          <div class="order-panel">
+            <div class="order-item">
+              <b>适合马上做</b>
+              <p>本周有新品、团购、节日活动、套餐上新，或者朋友圈已经想发但不知道怎么写。</p>
+            </div>
+            <div class="order-item">
+              <b>不适合硬接</b>
+              <p>没有真实图片、不能提供价格或活动细节、需要假探店或保证爆款的需求，先不接。</p>
+            </div>
+            <div class="order-item">
+              <b>付款和交付</b>
+              <p>确认素材和范围后收款，48 小时内交首版；首周包含一次统一修改。</p>
             </div>
           </div>
         </section>
@@ -583,13 +644,14 @@
               <p>
                 扫右侧微信二维码加我，直接发店铺信息和 3-5 张真实图片。我会先判断素材是否适合做，再确认 29 元试做、99 元试用包，或 399 元首周内容包。
               </p>
-              <div class="copy-box">咨询模板：
+              <div class="copy-box" id="consultationTemplate">咨询模板：
 店名：
 城市/商圈：
 主营产品：
 这次想推：
 图片素材：有 / 没有
 想做：29 元单条体验 / 99 元正式试用包 / 399 元首周内容包</div>
+              <button class="copy-button" type="button" data-copy-target="consultationTemplate">复制咨询模板</button>
               <div class="actions">
                 <a class="button primary" href="mailto:1014551947@qq.com?subject=本地商家内容包咨询">发邮件咨询</a>
                 <a class="button" href="https://github.com/chenxiaojie555">GitHub 主页</a>
@@ -607,5 +669,32 @@
         本页面为个人服务展示页。交易请在双方确认交付内容、价格和修改次数后进行。
       </footer>
     </div>
+    <script>
+      document.querySelectorAll("[data-copy-target]").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const target = document.getElementById(button.dataset.copyTarget);
+          if (!target) return;
+          const text = target.innerText.trim();
+          try {
+            await navigator.clipboard.writeText(text);
+            button.textContent = "已复制";
+            setTimeout(() => {
+              button.textContent = "复制咨询模板";
+            }, 1800);
+          } catch {
+            const area = document.createElement("textarea");
+            area.value = text;
+            document.body.appendChild(area);
+            area.select();
+            document.execCommand("copy");
+            document.body.removeChild(area);
+            button.textContent = "已复制";
+            setTimeout(() => {
+              button.textContent = "复制咨询模板";
+            }, 1800);
+          }
+        });
+      });
+    </script>
   </body>
 </html>

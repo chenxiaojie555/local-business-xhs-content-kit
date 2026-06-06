@@ -35,6 +35,31 @@ Deliverables:
 - One short reply script for customer inquiries
 - One light revision
 
+Best fit:
+
+- The shop has a real weekly activity, new product, combo, or seasonal promotion.
+- The owner can provide real photos and the basic price / offer details.
+- The owner wants material they can publish themselves on REDNote, WeChat Moments, or both.
+
+Not a fit:
+
+- No real shop / product photos are available.
+- The buyer wants fake reviews, fake influencer posts, fake traffic, or guaranteed virality.
+- The buyer cannot confirm claims, prices, discount rules, or compliance-sensitive wording.
+
+Order message:
+
+```text
+Shop name:
+City / business area:
+Main product or service:
+This week's offer:
+Target customer:
+Photos available: yes / no
+Preferred package: 29 RMB single trial / 99 RMB trial post / 399 RMB first-week package
+Claims or wording to avoid:
+```
+
 ## Monthly Basic Package
 
 Deliverables:
